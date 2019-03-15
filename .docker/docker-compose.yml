@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  www:
+    volumes:
+      - ../:/var/www/html/:cached
+    build:
+      context: ../.docker/build/
+    ports:
+      - 80:80
+    networks:
+      nginx-proxy:
+
+networks:
+  nginx-proxy:
+    external:
+      name: nginx-proxy

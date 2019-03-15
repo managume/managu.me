@@ -1,0 +1,11 @@
+enabled: true
+author: Manu Aguilar
+title_header: false
+home_profile: true
+infinite_scroll: true
+analytics: UA-YOURCODE
+social:
+    twitter: @managume
+    github: managume
+    linkedin: managume
+
