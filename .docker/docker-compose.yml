@@ -2,16 +2,12 @@ version: '3.7'
 
 services:
   www:
+    container_name: ${COMPOSE_PROJECT_NAME}-www
+    restart: unless-stopped
     volumes:
-      - ../:/var/www/html/:cached
+      - ../:/var/www/html:cached
     build:
-      context: ../.docker/build/
+      context: build/.
+    command: 'apachectl -D FOREGROUND'
     ports:
       - 80:80
-    networks:
-      nginx-proxy:
-
-networks:
-  nginx-proxy:
-    external:
-      name: nginx-proxy
