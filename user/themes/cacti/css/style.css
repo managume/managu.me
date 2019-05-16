@@ -92,7 +92,7 @@ h2 {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	margin-bottom: 20px;
 }
 
@@ -211,11 +211,13 @@ a,
 #post-list li:hover .dates,
 #title:hover {
 	text-decoration: none;
-	color: #5badf0;
-	color: #5694f1;
+	/*color: #5badf0;*/
+	color: #33ED51;
 }
 
-p a { color: #5694f1; }
+p a { color: #33ED51; }
+
+p a:hover { color: #42B354; }
 
 /*Transitions*/
 a,
